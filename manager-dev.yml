@@ -38,3 +38,6 @@ zuul:
     tensquare-spit:
       path: /spit/**
       serviceId: tensquare-spit
+    tensquare-search:
+      path: /search/**
+      serviceId: tensquare-search
