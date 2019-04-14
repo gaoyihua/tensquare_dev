@@ -9,6 +9,9 @@ eureka:
       defaultZone: http://192.168.25.129:6868/eureka/
   instance:
     prefer-ip-address: true #以后布到线上后模块之间可以跨域访问
+jwt:
+  config:
+    key: tensquare
 zuul:
   routes:
     tensquare-base:
