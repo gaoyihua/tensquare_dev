@@ -1,0 +1,27 @@
+server: 
+  port: 9003
+spring: 
+  application:  
+    name: tensquare-qa #指定服务名
+  datasource:  
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.25.129:3306/tensquare_qa?characterEncoding=UTF8
+    username: root
+    password: root
+  jpa: 
+    database: MySQL
+    show-sql: true
+  rabbitmq:
+    host: 192.168.25.129
+jwt:
+  config:
+    key: tensquare
+eureka:
+  client:
+    service-url: #客户端和服务端交互的地址
+      defaultZone: http://192.168.25.129:6868/eureka/
+  instance:
+    prefer-ip-address: true #以后布到线上后模块之间可以跨域访问
+feign:
+  hystrix:
+    enabled: true
