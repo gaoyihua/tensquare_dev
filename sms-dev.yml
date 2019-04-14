@@ -11,3 +11,9 @@ aliyun:
     accessKeySecret: d2zek61FIY7GGIVzBydBvXQsaeOikv
     template_code: SMS_162220416
     sign_name: 十次方
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.25.129:6868/eureka/
+  instance:
+    prefer-ip-address: true #以后布到线上后模块之间可以跨域访问
