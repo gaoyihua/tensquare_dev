@@ -19,7 +19,7 @@ zuul:
     tensquare-base:
       path: /base/**  #配置请求URL的请求规则
       url: http://192.168.25.129:9001/
-      //serviceId: tensquare-base #指定Eureka注册中心中的服务id
+      ##serviceId: tensquare-base #指定Eureka注册中心中的服务id
     tensquare-user:
       path: /user/**
       serviceId: tensquare-user
